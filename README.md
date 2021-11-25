@@ -2,5 +2,5 @@
 CPSC 254 Class Project: Anonymous confessions box
 
 Use of open source software: <br/>
-FlatUI - used for the user interface of the program <br/>
-https://google.github.io/flatui/index.html
+GTK - used for the user interface of the program <br/>
+https://www.gtk.org/docs/installations/windows/#using-gtk-from-msys2-packages

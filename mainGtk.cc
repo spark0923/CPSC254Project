@@ -4,29 +4,52 @@
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
+#include "Questions.cc"
+#include <memory>
+#include <utility>
 
+GtkWidget* score;
 GtkWidget* enter_msg;
-GtkWidget* pleaseEnterMsg;
-std::vector<GtkWidget*> messagesVector;
+GtkWidget* announcement;
+GtkWidget* question;
+
+std::shared_ptr<Game> g = std::make_shared<Game>();
 
 void onCLickSubmit(GtkWidget* submitBtn, gpointer data) {
-    const gchar *c = gtk_entry_get_text(GTK_ENTRY(enter_msg));
-    if ((c != NULL) && (c[0] == '\0')) {
-        gtk_label_set_text(GTK_LABEL(pleaseEnterMsg), "Please enter a message!");
+    if (g->gameDone()) {
         return;
     }
-    std::string s;
-    s.assign(c);
-    std::cout << s << std::endl;
-    gtk_entry_set_text(GTK_ENTRY(enter_msg), "");
-    gtk_label_set_text(GTK_LABEL(pleaseEnterMsg), "");
+    
+    const gchar *c = gtk_entry_get_text(GTK_ENTRY(enter_msg));
 
+    // check if input is empty
+    if ((c != NULL) && (c[0] == '\0')) {
+        gtk_label_set_text(GTK_LABEL(announcement), "Please enter a message!");
+        return;
+    }
+
+    gtk_label_set_text(GTK_LABEL(announcement), "");
+    if (g->checkAnswer(std::string(c))) {
+        gtk_label_set_text(GTK_LABEL(announcement), "Correct!");
+        g->nextQuestion();
+        gtk_label_set_text(GTK_LABEL(question), g->getQuestion().c_str());
+    }
+    else {
+        gtk_label_set_text(GTK_LABEL(announcement), "WRONG!!!");
+    }
+
+    std::string scoreMsg = "Score: " + to_string(g->getScore());
+    const char* scoreMsgC = scoreMsg.c_str();
+    
+    gtk_label_set_text(GTK_LABEL(score), scoreMsgC);
+
+    gtk_entry_set_text(GTK_ENTRY(enter_msg), "");
 }
 static void activate(GtkApplication *app, gpointer user_data) {
     //window meta data
     GtkWidget *window;
     window = gtk_application_window_new(app);
-    gtk_window_set_title(GTK_WINDOW(window), "Anonymous Confessions");
+    gtk_window_set_title(GTK_WINDOW(window), "Dumb Trivia");
     gtk_window_set_default_size(GTK_WINDOW(window), 700, 800);
     gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
 
@@ -38,33 +61,35 @@ static void activate(GtkApplication *app, gpointer user_data) {
                                               GTK_STYLE_PROVIDER_PRIORITY_USER);
 
     // Form to enter message
-    GtkWidget* enter_msg_label = gtk_label_new("Your confession: ");
+    score = gtk_label_new("Score: 0");
+    GtkWidget* enter_msg_label = gtk_label_new("Your answer: ");
     enter_msg = gtk_entry_new();
-    gtk_entry_set_placeholder_text(GTK_ENTRY(enter_msg), "Last week I ate a ****!!");
+    gtk_entry_set_placeholder_text(GTK_ENTRY(enter_msg), "You're probably wrong");
     GtkWidget* submitBtn = gtk_button_new_with_label("Submit");
-    pleaseEnterMsg = gtk_label_new("");
+    announcement = gtk_label_new("");
     g_signal_connect(submitBtn,"clicked",G_CALLBACK(onCLickSubmit), enter_msg);
 
     // packing all of the message form into a single box
     GtkWidget* msgForm = gtk_box_new(GTK_ORIENTATION_VERTICAL, 20);
+    gtk_box_pack_start(GTK_BOX(msgForm), score, FALSE, FALSE, 0);
     gtk_box_pack_start(GTK_BOX(msgForm), enter_msg_label, FALSE, FALSE, 0);
     gtk_box_pack_start(GTK_BOX(msgForm), enter_msg, FALSE, FALSE, 0);
     gtk_box_pack_start(GTK_BOX(msgForm), submitBtn, FALSE, FALSE, 0);
-    gtk_box_pack_start(GTK_BOX(msgForm), pleaseEnterMsg, FALSE, FALSE, 0);
+    gtk_box_pack_start(GTK_BOX(msgForm), announcement, FALSE, FALSE, 0);
     //styling the message box
     GtkStyleContext* context = gtk_widget_get_style_context(msgForm);
     gtk_style_context_add_class(context, "enterMsgForm");
 
     // confessions box container
-    GtkFrame* frame = GTK_FRAME(gtk_frame_new(NULL));
+    question = gtk_label_new(g->getQuestion().c_str());
     // styling
-    GtkStyleContext* msgContainerContext = gtk_widget_get_style_context(GTK_WIDGET(frame));
+    GtkStyleContext* msgContainerContext = gtk_widget_get_style_context(GTK_WIDGET(question));
     gtk_style_context_add_class(msgContainerContext, "msgContainer");
 
     // want all components to flow vertically
     GtkWidget* box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 20);
     gtk_box_pack_start(GTK_BOX(box), msgForm, FALSE, FALSE, 0);
-    gtk_box_pack_start(GTK_BOX(box), GTK_WIDGET(frame), FALSE, FALSE, 0);
+    gtk_box_pack_start(GTK_BOX(box), GTK_WIDGET(question), FALSE, FALSE, 0);
 
     gtk_container_add(GTK_CONTAINER(window), box);
     gtk_widget_show_all(window);

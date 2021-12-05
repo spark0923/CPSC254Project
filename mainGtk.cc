@@ -16,6 +16,8 @@ GtkWidget* question;
 std::shared_ptr<Game> g = std::make_shared<Game>();
 
 void onCLickSubmit(GtkWidget* submitBtn, gpointer data) {
+
+
     if (g->gameDone()) {
         return;
     }
@@ -46,6 +48,8 @@ void onCLickSubmit(GtkWidget* submitBtn, gpointer data) {
     gtk_entry_set_text(GTK_ENTRY(enter_msg), "");
 }
 static void activate(GtkApplication *app, gpointer user_data) {
+    g->questionFromTxt();
+
     //window meta data
     GtkWidget *window;
     window = gtk_application_window_new(app);

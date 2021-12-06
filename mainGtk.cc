@@ -8,23 +8,25 @@
 #include <memory>
 #include <utility>
 
+// Globally defined user interface pieces for easy reference
 GtkWidget* score;
 GtkWidget* enter_msg;
 GtkWidget* announcement;
 GtkWidget* question;
 
+// The Game class is used to abstract the game from the user interface
 std::shared_ptr<Game> g = std::make_shared<Game>();
 
+// Button handler for submitting an answer
 void onCLickSubmit(GtkWidget* submitBtn, gpointer data) {
-
-
+    // The button shouldn't do anything when the game is finished
     if (g->gameDone()) {
         return;
     }
     
     const gchar *c = gtk_entry_get_text(GTK_ENTRY(enter_msg));
 
-    // check if input is empty
+    // check if input is empty, exit immediately
     if ((c != NULL) && (c[0] == '\0')) {
         gtk_label_set_text(GTK_LABEL(announcement), "Please enter a message!");
         return;
@@ -40,6 +42,7 @@ void onCLickSubmit(GtkWidget* submitBtn, gpointer data) {
         gtk_label_set_text(GTK_LABEL(announcement), "WRONG!!!");
     }
 
+    // update the score
     std::string scoreMsg = "Score: " + to_string(g->getScore());
     const char* scoreMsgC = scoreMsg.c_str();
     
@@ -47,6 +50,7 @@ void onCLickSubmit(GtkWidget* submitBtn, gpointer data) {
 
     gtk_entry_set_text(GTK_ENTRY(enter_msg), "");
 }
+
 static void activate(GtkApplication *app, gpointer user_data) {
     g->questionFromTxt();
 

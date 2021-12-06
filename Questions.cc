@@ -14,6 +14,7 @@ class Game {
 		vector< pair<string,string>> questions;
 
 	public:
+		// Inputting questions from text file into the questions vector.
 		void questionFromTxt(){
 		    string line, test, question, answer;
 			int findPos1, findPos2, findPos3, findPos4;
@@ -61,12 +62,14 @@ class Game {
 		int gameDone() {
 			return currentQuestionNum == questions.size();
 		}
+
 		bool checkAnswer(string userInput) {
 			bool correct = userInput == questions[currentQuestionNum].second;
 			score = correct ? score + 100 : score - 100;
 			
 			return correct;
 		}
+		
 		void playAgain() {
 			currentQuestionNum = 0;
 			score = 0;

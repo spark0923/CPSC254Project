@@ -28,6 +28,6 @@ Planning- It took a while for us to decide what we should do for our project. We
 The open source we decided to use was GTK, which would be used for the UI. Because of this, we thought about having our project be an anonymous confession box. That seemed something incredibly simple. (-----) began to work on implementing the open source program to our project. <br/>
 
 Change of Plans and Coding- 
-
+The creation of the UI was successful. However, (-----) wasn't able to figure out how to store new messages for the chat box. Because of that, we had to change plans. Randall thought that we could work on a quiz game and designed on how the game is going to be like.
 
 

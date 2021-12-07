@@ -33,9 +33,11 @@ Johnson's code had been uploaded on GitHub on the 3rd of December. We felt at th
 
 
 # Sources for questions and answers
-https://www.usa.gov/presidents <br/>
-https://www.imdb.com/name/nm0492951/ <br/>
-https://www.wikiwand.com/en/Madame_Tussauds <br/>
+President- https://www.usa.gov/presidents <br/>
+Eiffel Tower- https://www.toureiffel.paris/en/the-monument/history <br/>
+Douglas Lawrence Osowski https://www.imdb.com/name/nm0492951/ <br/>
+Artist https://www.wikiwand.com/en/Madame_Tussauds <br/>
+
 
 
 

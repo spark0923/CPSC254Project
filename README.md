@@ -30,7 +30,7 @@ Johnson Tong(jt28@csu.fullerton.edu) <br/> - Created base GUI of the game and im
 
 Scott SangHyuk Park(scottpark44@csu.fullerton.edu) - A lot of the things I did was add some functions that I thought would make the program practical for other users. Rather than having the questions embedded into the program, what if we allowed the user to bring their own questions, so that they can suit it to their needs? What if there was a question counter, telling us how many questions are left? Answering these questions in order to add practicality to the program was a large part of what I worked on.<br/>
 
-Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up with the idea of a quiz game though I might be wrong there. I helped designed how the quiz would play like. I also came up with almost all of the questions and answers. I had an original code that was the blueprint for the code of quiz game. The code was changed by Johnson to make it more convenient and less cluttered. I also worked on parts of the README file such as the how to play section, my part of the Members section, and the Development Experience section. <br/>
+Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up with the idea of a quiz game though I might be wrong there. I helped designed how the quiz would play like. I also came up with many of the questions and answers. I had an original code that was the blueprint for the code of quiz game. The code was changed by Johnson to make it more convenient and less cluttered. I also worked on parts of the README file such as the how to play section, my part of the Members section, and the Development Experience section. <br/>
 
 
 # Development Experience:

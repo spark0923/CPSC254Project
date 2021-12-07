@@ -26,7 +26,7 @@ You need to answer 10 questions. After all of them are answered, your final scor
 Good Luck!
 
 # Members:
-Johnson Tong(jt28@csu.fullerton.edu) <br/>
+Johnson Tong(jt28@csu.fullerton.edu) <br/> - Created base GUI of the game and implemented Randall's code to work with it. Made everything a bit more readable and reusable.
 
 Scott SangHyuk Park(scottpark44@csu.fullerton.edu) - A lot of the things I did was add some functions that I thought would make the program practical for other users. Rather than having the questions embedded into the program, what if we allowed the user to bring their own questions, so that they can suit it to their needs? What if there was a question counter, telling us how many questions are left? Answering these questions in order to add practicality to the program was a large part of what I worked on.<br/>
 

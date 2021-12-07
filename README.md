@@ -33,8 +33,9 @@ Johnson's code had been uploaded on GitHub on the 3rd of December. We felt at th
 
 
 # Sources for questions and answers
-https://www.usa.gov/presidents 
-https://www.imdb.com/name/nm0492951/
+https://www.usa.gov/presidents <br/>
+https://www.imdb.com/name/nm0492951/ <br/>
+https://www.wikiwand.com/en/Madame_Tussauds <br/>
 
 
 

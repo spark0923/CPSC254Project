@@ -6,9 +6,9 @@ GTK - used for the user interface of the program <br/>
 https://www.gtk.org/docs/installations/windows/#using-gtk-from-msys2-packages
 
 # To use:
-In shell, <br/>
+In shell: <br/>
 ```sudo apt-get install libgtk-3-dev```<br/>
-Inside the project directory, please use <br/>
+Inside the project directory: <br/>
 ```./run.sh```
 
 # How to Play:

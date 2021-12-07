@@ -19,7 +19,7 @@ Good Luck!
 
 Scott SangHyuk Park(scottpark44@csu.fullerton.edu) <br/>
 
-Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up with the idea of a trivia game though I might be wrong there. I came up with almost all of the questions and answers. I had an original code that was the blueprint for the code of quiz game. Much of the code was changed by (-----) to make it more convenient and less cluttered. I also worked on parts of the README file such as the how to play section and my part of the Members section. <br/>
+Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up with the idea of a trivia game though I might be wrong there. I came up with almost all of the questions and answers. I had an original code that was the blueprint for the code of quiz game. The code was changed by (-----) to make it more convenient and less cluttered. I also worked on parts of the README file such as the how to play section and my part of the Members section. <br/>
 
 
 # Development Experience 

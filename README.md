@@ -35,8 +35,10 @@ Johnson's code had been uploaded on GitHub on the 3rd of December. We felt at th
 # Sources for questions and answers
 President- https://www.usa.gov/presidents <br/>
 Eiffel Tower- https://www.toureiffel.paris/en/the-monument/history <br/>
-Douglas Lawrence Osowski https://www.imdb.com/name/nm0492951/ <br/>
-Artist https://www.wikiwand.com/en/Madame_Tussauds <br/>
+Douglas Lawrence Osowski- https://www.imdb.com/name/nm0492951/ <br/>
+Darth Vader- https://www.verifythis.com/article/news/verify/pop-culture/star-wars-day-darth-vader-luke-father-line-misquoted/536-c6a3fcd3-41ce-4a50-b2ea-6a28b342a86d <br/>
+Artist- https://www.wikiwand.com/en/Madame_Tussauds <br/>
+
 
 
 

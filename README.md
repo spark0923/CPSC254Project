@@ -23,7 +23,7 @@ Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up wi
 
 
 # Development Experience 
-Planning- It took a while for us to decide what we should do for our project. 
+Planning- It took a while for us to decide what we should do for our project. We thought about making a random music generator. However we decided not to because we felt that doing something more simple would be better for us instead of doing something that might result in potential complications. We have't tried it so we don't know for sure if that would've been the case. 
 
 
 

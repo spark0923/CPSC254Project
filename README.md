@@ -40,6 +40,9 @@ Darth Vader- https://www.verifythis.com/article/news/verify/pop-culture/star-war
 Artist- https://www.wikiwand.com/en/Madame_Tussauds <br/>
 Orange- https://www.merriam-webster.com/words-at-play/what-rhymes-with-orange <br/>
 Youtube Rewind 2018- https://www.theverge.com/2018/12/13/18137894/youtube-rewind-2018-dislike-shane-dawson-logan-paul-pewdiepie-mkbhd-philip-defranco <br/>
+Fast and the Furious- https://www.rottentomatoes.com/franchise/the_fast_and_the_furious <br/>
+Cal State Fullerton- http://www.fullerton.edu/academics/ <br/>
+Computer Bug- https://securityintelligence.com/articles/shellshock-vulnerability-in-depth/ <br/>
 
 
 

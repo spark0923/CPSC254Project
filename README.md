@@ -39,6 +39,8 @@ Douglas Lawrence Osowski- https://www.imdb.com/name/nm0492951/ <br/>
 Darth Vader- https://www.verifythis.com/article/news/verify/pop-culture/star-wars-day-darth-vader-luke-father-line-misquoted/536-c6a3fcd3-41ce-4a50-b2ea-6a28b342a86d <br/>
 Artist- https://www.wikiwand.com/en/Madame_Tussauds <br/>
 Orange- https://www.merriam-webster.com/words-at-play/what-rhymes-with-orange <br/>
+Youtube Rewind 2018- https://www.theverge.com/2018/12/13/18137894/youtube-rewind-2018-dislike-shane-dawson-logan-paul-pewdiepie-mkbhd-philip-defranco <br/>
+
 
 
 

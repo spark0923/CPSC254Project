@@ -19,7 +19,7 @@ Good Luck!
 
 (Member 2) <br/>
 
-Randall Frye <br/>
+Randall Frye- I believe I was the one who came up with the idea of a trivia game though I might be wrong there. I planned on how the game is going to be like, such as the point system and how much is won and lost. I also came up with almost all of the questions. <br/>
 
 
 

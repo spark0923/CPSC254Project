@@ -15,17 +15,17 @@ You need to answer 10 questions. After all of them are answered, your final scor
 Good Luck!
 
 # Members
-(Member 1) <br/>
+Johnson Tong(jt28@csu.fullerton.edu) <br/>
 
 Scott SangHyuk Park(scottpark44@csu.fullerton.edu) <br/>
 
-Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up with the idea of a trivia game though I might be wrong there. I designed how the quiz would play like. I also came up with almost all of the questions and answers. I had an original code that was the blueprint for the code of quiz game. The code was changed by (-----) to make it more convenient and less cluttered. I also worked on parts of the README file such as the how to play section and my part of the Members section. <br/>
+Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up with the idea of a trivia game though I might be wrong there. I helped designed how the quiz would play like. I also came up with almost all of the questions and answers. I had an original code that was the blueprint for the code of quiz game. The code was changed by Johnson to make it more convenient and less cluttered. I also worked on parts of the README file such as the how to play section and my part of the Members section. <br/>
 
 
 # Development Experience 
-Planning- It took a while for us to decide what we should do for our project. We thought about making a funny music generator. However we decided not to because we felt that doing something more simple would be better for us instead of doing something that might result in potential complications. We have't tried it so we don't know for sure if that would've been the case. The open source we decided to use was GTK, which would be used for the UI. Because of this, we thought about having our project be an anonymous confession box. That seemed something incredibly simple. (-----) began to work on implementing the open source program to our project. <br/>
+Planning- It took a while for us to decide what we should do for our project. We thought about making a funny music generator. However we decided not to because we felt that doing something more simple would be better for us instead of doing something that might result in potential complications. We have't tried it so we don't know for sure if that would've been the case. The open source we decided to use was GTK, which would be used for the UI. Because of this, we thought about having our project be an anonymous confession box. That seemed something incredibly simple. Johnson began to work on implementing the open source program to our project. <br/>
 
 Change of Plans and Coding- 
-The creation of the UI was successful. However, (-----) wasn't able to figure out how to store new messages for the chat box. Because of that, we had to change plans. Randall thought that we could work on a quiz game and designed on how the game is going to be like.
+The creation of the UI was successful. However, Johnson wasn't able to figure out how to store new messages for the chat box. Because of that, we had to change plans. Randall thought that we could work on a quiz game. We then designed how the game could play like as well as how it could be done through coding. 
 
 

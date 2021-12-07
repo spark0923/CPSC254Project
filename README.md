@@ -19,7 +19,7 @@ Good Luck!
 
 (Member 2) <br/>
 
-Randall Frye- I believe I was the one who came up with the idea of a trivia game though I might be wrong there. I planned on how the game is going to be like, such as the point system and how much is won and lost. I also came up with almost all of the questions. <br/>
+Randall Frye- I believe I was the one who came up with the idea of a trivia game though I might be wrong there. I planned on how the game is going to be like, such as the point system and how much is won and lost. I also came up with almost all of the questions. I had an original code that was the blueprint for the code of quiz game. Much of the code was changed to make it more convenient and less clutter by (someone else). I also worked on parts of the README file such as the how to play section and my part of the Members section. <br/>
 
 
 

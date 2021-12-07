@@ -13,6 +13,7 @@ GtkWidget* score;
 GtkWidget* enter_msg;
 GtkWidget* announcement;
 GtkWidget* question;
+GtkWidget* questionNum;
 
 // The Game class is used to abstract the game from the user interface
 std::shared_ptr<Game> g = std::make_shared<Game>();
@@ -49,6 +50,12 @@ void onCLickSubmit(GtkWidget* submitBtn, gpointer data) {
     gtk_label_set_text(GTK_LABEL(score), scoreMsgC);
 
     gtk_entry_set_text(GTK_ENTRY(enter_msg), "");
+
+    //  update the current question label
+    std::string currentQuestion = g->currentOutOf();
+    const char* currentQuestionC = currentQuestion.c_str();
+
+    gtk_label_set_text(GTK_LABEL(questionNum), currentQuestionC);
 }
 
 static void activate(GtkApplication *app, gpointer user_data) {
@@ -70,6 +77,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
 
     // Form to enter message
     score = gtk_label_new("Score: 0");
+    questionNum = gtk_label_new (g->currentOutOf().c_str());
     GtkWidget* enter_msg_label = gtk_label_new("Your answer: ");
     enter_msg = gtk_entry_new();
     gtk_entry_set_placeholder_text(GTK_ENTRY(enter_msg), "You're probably wrong");
@@ -80,6 +88,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     // packing all of the message form into a single box
     GtkWidget* msgForm = gtk_box_new(GTK_ORIENTATION_VERTICAL, 20);
     gtk_box_pack_start(GTK_BOX(msgForm), score, FALSE, FALSE, 0);
+    gtk_box_pack_start(GTK_BOX(msgForm), questionNum, FALSE, FALSE, 0);
     gtk_box_pack_start(GTK_BOX(msgForm), enter_msg_label, FALSE, FALSE, 0);
     gtk_box_pack_start(GTK_BOX(msgForm), enter_msg, FALSE, FALSE, 0);
     gtk_box_pack_start(GTK_BOX(msgForm), submitBtn, FALSE, FALSE, 0);

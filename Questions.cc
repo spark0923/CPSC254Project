@@ -10,6 +10,7 @@ class Game {
 	private:
 		int score = 0;
 		int currentQuestionNum = 0;
+		string message;
 		
 		vector< pair<string,string>> questions;
 
@@ -49,6 +50,16 @@ class Game {
 				return questions[currentQuestionNum].first;
 			}
 			return "You finished the game with " + to_string(score) + " points";
+		}
+
+		string currentOutOf(){
+			if (currentQuestionNum + 1 <= questions.size()) {
+				message = "Question " + to_string(currentQuestionNum + 1) + " out of " + to_string(questions.size());
+			}
+			else{
+				message = "Quiz Complete!";
+			}
+			return message;
 		}
 		
 		void nextQuestion() {

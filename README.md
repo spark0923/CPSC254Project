@@ -14,3 +14,12 @@ A question will appear that you must answer correctly. If you get the right answ
 You need to answer 10 questions. After all of them are answered, your final score will appear. Make sure all your answers have their first letter capitalized.
 Good Luck!
 
+# Members
+(Member 1) <br/>
+
+(Member 2) <br/>
+
+Randall Frye <br/>
+
+
+

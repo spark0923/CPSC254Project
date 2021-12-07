@@ -1,0 +1,12 @@
+Format: "Question", "Answer"
+"What's the name of the US president?", "Joe Biden"
+"What year was the Eiffel Tower built?", "1889"
+"True or False? Douglas Lawrence Osowki voices Sheldon J Plankton on the show, Spongebob Squarepants. Use T and F for the answer.", "T"
+"True or False? Darth Vader said to Luke, 'Luke I'm Your Father'. Use T and F for the answer.", "F"
+"Last name of an artist, famous for her wax sculptures, who opened up a wax museum in 1835 London.", "Tussaud"
+"What rhymes with orange?", "Sporange"
+"True or False? Youtube Rewind 2018 was the most disliked youtube video. Use T and F for the answer.", "T"
+"True or False? Fast and The Furious 10 has a 47\% on Rotten Tomato. Use T and F for the answer.", "F"
+"How many degree programs does CSUF offer?", "110"
+"What's the name of the computer bug that allows attackers to send commands for Bash to execute?", "Shellshock"
+

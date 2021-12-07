@@ -82,6 +82,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     enter_msg = gtk_entry_new();
     gtk_entry_set_placeholder_text(GTK_ENTRY(enter_msg), "You're probably wrong");
     GtkWidget* submitBtn = gtk_button_new_with_label("Submit");
+    GtkWidget* skipBtn = gtk_button_new_with_label("Skip");
     announcement = gtk_label_new("");
     g_signal_connect(submitBtn,"clicked",G_CALLBACK(onCLickSubmit), enter_msg);
 
@@ -92,6 +93,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     gtk_box_pack_start(GTK_BOX(msgForm), enter_msg_label, FALSE, FALSE, 0);
     gtk_box_pack_start(GTK_BOX(msgForm), enter_msg, FALSE, FALSE, 0);
     gtk_box_pack_start(GTK_BOX(msgForm), submitBtn, FALSE, FALSE, 0);
+    gtk_box_pack_start(GTK_BOX(msgForm), skipBtn, FALSE, FALSE, 0);
     gtk_box_pack_start(GTK_BOX(msgForm), announcement, FALSE, FALSE, 0);
     //styling the message box
     GtkStyleContext* context = gtk_widget_get_style_context(msgForm);

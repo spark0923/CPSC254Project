@@ -9,7 +9,7 @@ https://www.gtk.org/docs/installations/windows/#using-gtk-from-msys2-packages
 In terminal: <br/>
 ```sudo apt-get install libgtk-3-dev```<br/>
 
-If running on WSL (Ubuntu):
+If running on WSL (Ubuntu):<br/>
 On Windows, download and install Xming X(https://sourceforge.net/projects/xming/).<br/>
 Run Xming.<br/>
 On Ubuntu, in terminal<br/>

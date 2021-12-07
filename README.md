@@ -10,10 +10,10 @@ In terminal: <br/>
 ```sudo apt-get install libgtk-3-dev```<br/>
 
 If running on WSL (Ubuntu):
-On Windows, download and install Xming X(https://sourceforge.net/projects/xming/).
-Run Xming.
-On Ubuntu, in terminal
-```export DISPLAY=:0```
+On Windows, download and install Xming X(https://sourceforge.net/projects/xming/).<br/>
+Run Xming.<br/>
+On Ubuntu, in terminal<br/>
+```export DISPLAY=:0```<br/>
 
 
 Inside the project directory: <br/>

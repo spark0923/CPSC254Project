@@ -6,10 +6,19 @@ GTK - used for the user interface of the program <br/>
 https://www.gtk.org/docs/installations/windows/#using-gtk-from-msys2-packages
 
 # To use:
-In shell: <br/>
+In terminal: <br/>
 ```sudo apt-get install libgtk-3-dev```<br/>
+
+If running on WSL (Ubuntu):
+On Windows, download and install Xming X(https://sourceforge.net/projects/xming/).
+Run Xming.
+On Ubuntu, in terminal
+```export DISPLAY=:0```
+
+
 Inside the project directory: <br/>
 ```./run.sh```
+
 
 # How to Play:
 A question will appear that you must answer correctly. If you get the right answer, you will earn 100 points to your score. Failure to do so will drop your score by 100 points. 

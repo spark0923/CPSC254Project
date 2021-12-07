@@ -66,7 +66,7 @@ void onClickSkip(GtkWidget* skipBtn){
         return;
     }
     // Next Question
-    g->skipQuestion();
+    g->nextQuestion();
     gtk_label_set_text(GTK_LABEL(question), g->getQuestion().c_str());
 
     // Update the Score

@@ -25,7 +25,9 @@ Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up wi
 # Development Experience 
 Planning- It took a while for us to decide what we should do for our project. We thought about making a funny music generator. However we decided not to because we felt that doing something more simple would be better for us instead of doing something that might result in potential complications. We have't tried it so we don't know for sure if that would've been the case. The open source we decided to use was GTK, which would be used for the UI. Because of this, we thought about having our project be an anonymous confession box. That seemed something incredibly simple. Johnson began to work on implementing the open source program to our project. <br/>
 
-Change of Plans and Coding- 
-The creation of the UI was successful. However, Johnson wasn't able to figure out how to store new messages for the chat box. Because of that, we had to change plans. Randall thought that we could work on a quiz game. We then designed how the game could play like as well as how it could be done through coding. We also thought about making it like a review for CPSC 254, but we went with trivia instead. We had planned to finish our project on November 28, but that didn't happen, partly because of our other college classes getting in the way.
+Change of Plans- 
+The creation of the UI was successful. However, Johnson wasn't able to figure out how to store new messages for the chat box. Because of that, we had to change plans. Randall thought that we could work on a quiz game. We then designed how the game could play like as well as how it could be done through coding. We also thought about making it like a review for CPSC 254, but we went with trivia instead. We had planned to finish our project on November 28, but that didn't happen, partly because of our other college classes getting in the way. <br/>
+
+Coding-
 
 

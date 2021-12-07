@@ -11,6 +11,7 @@
 // Globally defined user interface pieces for easy reference
 GtkWidget* score;
 GtkWidget* enter_msg;
+GtkWidget* skip_question;
 GtkWidget* announcement;
 GtkWidget* question;
 GtkWidget* questionNum;
@@ -58,6 +59,27 @@ void onCLickSubmit(GtkWidget* submitBtn, gpointer data) {
     gtk_label_set_text(GTK_LABEL(questionNum), currentQuestionC);
 }
 
+//Button Handler for the "SKIP" Button
+void onClickSkip(GtkWidget* skipBtn){
+    // The button shouldn't do anything when the game is finished
+    if (g->gameDone()) {
+        return;
+    }
+    // Next Question
+    g->skipQuestion();
+    gtk_label_set_text(GTK_LABEL(question), g->getQuestion().c_str());
+
+    // Update the Score
+    std::string scoreMsg = "Score: " + to_string(g->getScore());
+    const char* scoreMsgC = scoreMsg.c_str();
+    gtk_label_set_text(GTK_LABEL(score), scoreMsgC);
+
+    // Update the Current Question Count
+    std::string currentQuestion = g->currentOutOf();
+    const char* currentQuestionC = currentQuestion.c_str();
+    gtk_label_set_text(GTK_LABEL(questionNum), currentQuestionC);
+}
+
 static void activate(GtkApplication *app, gpointer user_data) {
     g->questionFromTxt();
 
@@ -85,6 +107,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     GtkWidget* skipBtn = gtk_button_new_with_label("Skip");
     announcement = gtk_label_new("");
     g_signal_connect(submitBtn,"clicked",G_CALLBACK(onCLickSubmit), enter_msg);
+    g_signal_connect(skipBtn, "clicked", G_CALLBACK(onClickSkip), skip_question);
 
     // packing all of the message form into a single box
     GtkWidget* msgForm = gtk_box_new(GTK_ORIENTATION_VERTICAL, 20);

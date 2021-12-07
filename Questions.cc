@@ -66,6 +66,11 @@ class Game {
 			currentQuestionNum++;
 		}
 
+		void skipQuestion(){
+			currentQuestionNum++;
+			score -= 100;
+		}
+
 		int getScore() {
 			return score;
 		}

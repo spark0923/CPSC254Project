@@ -19,7 +19,7 @@ Johnson Tong(jt28@csu.fullerton.edu) <br/>
 
 Scott SangHyuk Park(scottpark44@csu.fullerton.edu) <br/>
 
-Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up with the idea of a trivia game though I might be wrong there. I helped designed how the quiz would play like. I also came up with almost all of the questions and answers. I had an original code that was the blueprint for the code of quiz game. The code was changed by Johnson to make it more convenient and less cluttered. I also worked on parts of the README file such as the how to play section and my part of the Members section. <br/>
+Randall Frye(rcfrye18@csu.fullerton.edu)- I believe I was the one who came up with the idea of a quiz game though I might be wrong there. I helped designed how the quiz would play like. I also came up with almost all of the questions and answers. I had an original code that was the blueprint for the code of quiz game. The code was changed by Johnson to make it more convenient and less cluttered. I also worked on parts of the README file such as the how to play section, my part of the Members section, and the Development Experience section. <br/>
 
 
 # Development Experience 
@@ -29,5 +29,5 @@ Change of Plans-
 The creation of the UI was successful. The base of the project had been completed. However, Johnson wasn't able to figure out how to store new messages for the chat box. Because of that, we had to change plans. Randall thought that we could work on a quiz game. We then designed how the game could play like as well as how it could be done through coding. We also thought about making it like a review for CPSC 254, but we went with trivia instead. We had planned to finish our project on November 28, but that didn't happen, partly because of our other college classes getting in the way. We then planned to finish up on December 4 as the deadline was near. Randall was also asked to work on a way to store the questions and answers, ideally before the 4th. <br/>
 
 Coding-
-
+Johnson's code had been uploaded on GitHub on the 3rd of December. We felt at the time that we were at least half way there. Randall uploaded his code on the 4th. The code contained a quiz game of ten questions with increasing point values. It also had a bonus game, which was later removed. The problems with the code was that there was a lot of copy and pasting, making it cluttered and unnecessary, and that it's difficult to work with as it was not very compatible with the use of the open source and Johnson's code. 
 

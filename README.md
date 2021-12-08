@@ -16,7 +16,7 @@ On Ubuntu, in terminal<br/>
 ```export DISPLAY=:0```<br/>
 
 Clone the project directory: <br/>
-```git clone git@github.com:spark0923/CPSC254Project.git```
+```git clone git@github.com:spark0923/CPSC254Project.git``` <br/>
 Inside the project directory: <br/>
 ```./run.sh```
 
